@@ -31,11 +31,11 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 <table style="border:none;">
   <tr>
     <td width="25%" style="border:none; text-align:center;">
-      <img src="images/agile_wbc.gif" width="100%" style="border-radius:8px;">
+      <video src="images/agile_wbc.mp4" width="100%" style="border-radius:8px;" autoplay loop muted playsinline></video>
       <br>Agile Whole-Body Control
     </td>
     <td width="25%" style="border:none; text-align:center;">
-      <img src="images/multiagent_safe.gif" width="100%" style="border-radius:8px;">
+      <video src="images/multiagent_safe.mp4" width="100%" style="border-radius:8px;" autoplay loop muted playsinline></video>
       <br>Multi-Agent Safe Decision Making
     </td>
     <td width="25%" style="border:none; text-align:center;">

@@ -31,12 +31,12 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 <table style="border:none;">
   <tr>
     <td width="25%" style="border:none; text-align:center;">
-      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <img src="images/agile_wbc.gif" width="100%" style="border-radius:8px;">
       <br>Agile Whole-Body Control
     </td>
     <td width="25%" style="border:none; text-align:center;">
-      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
-      <br>Humanoid Soccer Kicking
+      <img src="images/multiagent_safe.gif" width="100%" style="border-radius:8px;">
+      <br>Multi-Agent Safe Decision Making
     </td>
     <td width="25%" style="border:none; text-align:center;">
       <img src="images/500x300.png" width="100%" style="border-radius:8px;">

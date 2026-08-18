@@ -17,14 +17,41 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I am a **Master's student in Robotics** at **Johns Hopkins University**. I also worked as a **Research Assistant** at the **Safe AI Lab, Carnegie Mellon University**, advised by Associate Professor [Ding Zhao](https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html) and Postdoctoral Researcher [Hao E. Zhang](https://haozhang-thu.github.io/). I received my B.S. in Mechanical Design, Manufacturing and Automation from **Dalian University of Technology**, where I was advised by **Prof. Zhenyuan Jia**, Academician of the Chinese Academy of Engineering. During my senior year, I spent one year as an exchange student at the **NUS (Suzhou) Research Institute, National University of Singapore**.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My research focuses on whole-body control of humanoid robots, multi-agent cooperation and game theory, and vision-language models (VLMs). A video of one of my projects has received **110K+** views and **22K+** likes on social media. I have also collaborated with **General Motors** on a joint research project.
 
+
+# 💻 Research Interests
+
+- Whole-body control for humanoid robots: Reinforcement learning, Imitation learning, and Sim-to-real transfer
+- Multi-agent cooperation and competition: Self-play and heterogeneous-robot games
+- Multi-modal foundation models: Fusing vision, touch, and language for safe robotic manipulation
+
+<table style="border:none;">
+  <tr>
+    <td width="25%" style="border:none; text-align:center;">
+      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <br>Agile Whole-Body Control
+    </td>
+    <td width="25%" style="border:none; text-align:center;">
+      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <br>Humanoid Soccer Kicking
+    </td>
+    <td width="25%" style="border:none; text-align:center;">
+      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <br>Multi-Agent Self-Play
+    </td>
+    <td width="25%" style="border:none; text-align:center;">
+      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <br>Visual-Tactile LM for Safe Manipulation
+    </td>
+  </tr>
+</table>
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026.08*: &nbsp;🎉🎉 Successfully completed a joint research project with **General Motors**.
+- *2026.06*: &nbsp;🎉🎉 I joined the **Safe AI Lab** at **Carnegie Mellon University** as a Research Assistant.
 
 # 📝 Publications 
 
@@ -42,17 +69,11 @@ My research interest includes neural machine translation and computer vision. I 
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.08 - now*, M.S. in Robotics, **Johns Hopkins University**, Baltimore, USA.
+- *2024.09 - 2025.07*, Exchange Student, **NUS (Suzhou) Research Institute, National University of Singapore**, Suzhou, China.
+- *2021.09 - 2025.07*, B.E. in Mechanical Design, Manufacturing and Automation, **Dalian University of Technology**, Dalian, China.
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# 💻 Research Experience
+- *2026.06 - now*, Research Assistant, **Safe AI Lab, Carnegie Mellon University**, Pittsburgh, USA.
+- *2023.07 - 2023.08*, Research Intern, **Institute of Automation, Chinese Academy of Sciences**, Beijing, China.

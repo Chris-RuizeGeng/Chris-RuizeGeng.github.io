@@ -43,7 +43,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
       <br>Multi-Agent Self-Play
     </td>
     <td width="25%" style="border:none; text-align:center;">
-      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <video src="images/vtl_manipulation.mp4" width="100%" style="border-radius:8px;" autoplay loop muted playsinline></video>
       <br>Visual-Tactile LM for Safe Manipulation
     </td>
   </tr>

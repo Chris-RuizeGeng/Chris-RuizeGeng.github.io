@@ -39,7 +39,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
       <br>Multi-Agent Safe Decision Making
     </td>
     <td width="25%" style="border:none; text-align:center;">
-      <img src="images/500x300.png" width="100%" style="border-radius:8px;">
+      <video src="images/selfplay.mp4" width="100%" style="border-radius:8px;" autoplay loop muted playsinline></video>
       <br>Multi-Agent Self-Play
     </td>
     <td width="25%" style="border:none; text-align:center;">
@@ -55,19 +55,38 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/selfplay.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks](https://arxiv.org/abs/2609.21100)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Ruize Geng**, Hao E. Zhang, Yisen Li, Yikai Wang, H. Eric Tseng, Ding Zhao
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**arXiv**](https://arxiv.org/abs/2609.21100)
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/sage.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration](https://arxiv.org/abs/2609.21130)
+
+Yisen Li, Hao Zhang, **Ruize Geng**, Yves Tseng, Ding Zhao, H. Eric Tseng
+
+[**arXiv**](https://arxiv.org/abs/2609.21130)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Anticipatory Robot Goalkeeping via Monotone Optimal Stopping](https://arxiv.org/abs/2609.23976)
+
+Hao E. Zhang, **Ruize Geng**, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao
+
+[**arXiv**](https://arxiv.org/abs/2609.23976)
+</div>
+</div>
 
 # 📖 Educations
 - *2025.08 - now*, M.S. in Robotics, **Johns Hopkins University**, Baltimore, USA.

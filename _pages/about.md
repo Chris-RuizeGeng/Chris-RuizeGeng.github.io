@@ -60,7 +60,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 [Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks](https://arxiv.org/abs/2609.21100)
 
-**Ruize Geng**, Hao E. Zhang, Yisen Li, Yikai Wang, H. Eric Tseng, Ding Zhao
+**Ruize Geng**\*, Hao E. Zhang\*, Yisen Li, Yikai Wang, H. Eric Tseng, Ding Zhao (\* equal contribution)
 
 [**arXiv**](https://arxiv.org/abs/2609.21100)
 </div>
@@ -71,7 +71,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 [SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration](https://arxiv.org/abs/2609.21130)
 
-Yisen Li, Hao Zhang, **Ruize Geng**, Yves Tseng, Ding Zhao, H. Eric Tseng
+Yisen Li\*, Hao Zhang\*, **Ruize Geng**\*, Yves Tseng, Ding Zhao, H. Eric Tseng (\* equal contribution)
 
 [**arXiv**](https://arxiv.org/abs/2609.21130)
 </div>
@@ -82,7 +82,7 @@ Yisen Li, Hao Zhang, **Ruize Geng**, Yves Tseng, Ding Zhao, H. Eric Tseng
 
 [Anticipatory Robot Goalkeeping via Monotone Optimal Stopping](https://arxiv.org/abs/2609.23976)
 
-Hao E. Zhang, **Ruize Geng**, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao
+Hao E. Zhang\*, **Ruize Geng**\*, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao (\* equal contribution)
 
 [**arXiv**](https://arxiv.org/abs/2609.23976)
 </div>

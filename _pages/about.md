@@ -71,7 +71,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 [SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration](https://arxiv.org/abs/2609.21130)
 
-Yisen Li, Hao Zhang, **Ruize Geng**, Yves Tseng, Ding Zhao, H. Eric Tseng
+Yisen Li\*, Hao Zhang\*, **Ruize Geng**\*, Yves Tseng, Ding Zhao, H. Eric Tseng (\* equal contribution)
 
 [**arXiv**](https://arxiv.org/abs/2609.21130)
 </div>
@@ -82,9 +82,31 @@ Yisen Li, Hao Zhang, **Ruize Geng**, Yves Tseng, Ding Zhao, H. Eric Tseng
 
 [Anticipatory Robot Goalkeeping via Monotone Optimal Stopping](https://arxiv.org/abs/2609.23976)
 
-Hao E. Zhang, **Ruize Geng**, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao
+Hao E. Zhang\*, **Ruize Geng**\*, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao (\* equal contribution)
 
 [**arXiv**](https://arxiv.org/abs/2609.23976)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv Preprint</div><video src='images/banana_kick.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer](https://arxiv.org/abs/2609.27269)
+
+Hao E. Zhang\*, **Ruize Geng**\*, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao (\* equal contribution)
+
+[**arXiv**](https://arxiv.org/abs/2609.27269)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv Preprint</div><video src='images/cognition_control.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Cognition to Control: Multi-Agent Learning for Human-Humanoid Collaborative Transport](https://arxiv.org/abs/2603.03768)
+
+Hao Zhang, Yisen Li, **Ruize Geng**, Yves Tseng, Yaru Niu, Ding Zhao, H. Eric Tseng
+
+[**arXiv**](https://arxiv.org/abs/2603.03768)
 </div>
 </div>
 

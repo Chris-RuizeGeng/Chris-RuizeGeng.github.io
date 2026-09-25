@@ -88,7 +88,7 @@ Hao E. Zhang\*, **Ruize Geng**\*, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv Preprint</div><video src='images/banana_kick.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/banana_kick.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer](https://arxiv.org/abs/2609.27269)
@@ -99,7 +99,7 @@ Hao E. Zhang\*, **Ruize Geng**\*, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv Preprint</div><video src='images/cognition_control.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/cognition_control.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Cognition to Control: Multi-Agent Learning for Human-Humanoid Collaborative Transport](https://arxiv.org/abs/2603.03768)

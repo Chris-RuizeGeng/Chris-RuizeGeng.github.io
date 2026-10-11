@@ -66,7 +66,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 - We introduce dynamics-induced commitment mapping (DIC-Map), a body-grounded framework that identifies when physical dynamics eliminate strategic alternatives in robotic games, revealing how embodiment fundamentally shapes learning and decision making in humanoid-quadruped penalty kicks.
 
-[**arXiv**](https://arxiv.org/abs/2609.21100)
+[**arXiv**](https://arxiv.org/abs/2609.21100) | [**Project Webpage**](https://chris-ruizegeng.github.io/penaltykick/)
 </div>
 </div>
 

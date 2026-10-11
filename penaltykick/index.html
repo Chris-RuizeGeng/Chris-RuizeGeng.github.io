@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks</title>
+  <meta name="description" content="DIC-Map: a body-grounded analysis of commitment, equilibrium concentration, and learning channels in humanoid–quadruped robotic penalty kicks.">
+
+  <link rel="icon" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #363636; }
+  .publication-title { font-weight: 800; margin-bottom: 0.5rem !important; }
+  .section { padding: 1.5rem 1.5rem !important; }
+
+  .teaser-video-container { max-width: 1000px; margin: 0 auto 1rem auto; }
+  .teaser-video-container video { width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+  /* 视频占位框：放好视频后把 .video-placeholder 换成 <video> 即可 */
+  .video-placeholder {
+    width: 100%; aspect-ratio: 16 / 9;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    border: 2px dashed #c9c9c9; border-radius: 12px; background: #fafafa; color: #9a9a9a;
+    font-weight: 600; letter-spacing: 0.02em;
+  }
+  .video-placeholder i { font-size: 2.2rem; margin-bottom: 0.4rem; }
+
+  .video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 1rem; }
+  @media (max-width: 768px) { .video-grid { grid-template-columns: 1fr; } }
+  .video-item { background: #fdfdfd; padding: 10px; border-radius: 10px; text-align: center; }
+  .video-item video { width: 100%; border-radius: 6px; }
+  .video-item .video-placeholder { border-radius: 6px; }
+  .video-caption { margin-top: 5px; font-weight: 600; font-size: 0.85rem; }
+
+  .figure-block { margin-bottom: 1.5rem !important; text-align: center; }
+  .figure-block img { width: 100%; max-width: 900px; height: auto; margin-bottom: 10px; }
+  .figure-description { text-align: justify; font-size: 1rem; line-height: 1.5; max-width: 900px; margin: 0 auto; }
+
+  .figure-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; max-width: 1000px; margin: 0 auto; }
+  @media (max-width: 768px) { .figure-grid { grid-template-columns: 1fr; } }
+  .figure-grid .figure-block img { max-width: 100%; }
+  .figure-grid .figure-description { font-size: 0.92rem; }
+
+  .section-title { font-weight: 700; margin-bottom: 1rem !important; }
+  .hero.is-light { background-color: transparent !important; }
+
+  .publication-authors a, .is-size-6.mt-2 a { color: #363636 !important; text-decoration: none; }
+  .publication-authors a:hover, .is-size-6.mt-2 a:hover { color: #3273dc !important; text-decoration: underline; }
+  .is-size-6.mt-2 { color: #363636 !important; }
+
+  .publication-links { margin-top: 1rem; margin-bottom: 1rem; }
+  .external-link { border-radius: 20px; margin: 0 5px; }
+  pre { padding: 1rem !important; margin-top: 0.5rem !important; }
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+
+      <h1 class="title is-1 publication-title">
+        ⚽ Dynamics-Induced Commitment in<br>Learning-Based Robotic Penalty Kicks
+      </h1>
+
+      <p class="is-size-5 has-text-weight-semibold has-text-grey mb-3">
+        Submitted to IEEE Trans. (Full version) and ICRA (Conf version)
+      </p>
+
+      <div class="is-size-5 publication-authors">
+        <span class="author-block">
+          <a href="https://chris-ruizegeng.github.io/" target="_blank">Ruize Geng</a><sup>*,1</sup>,
+          <a href="https://haozhang-thu.github.io/" target="_blank">Hao E. Zhang</a><sup>*,1,2,✉️</sup>,
+          <a href="#">Yisen Li</a><sup>2</sup>,
+          <a href="https://www.linkedin.com/in/yikai-wang-b81497283/" target="_blank">Yikai Wang</a><sup>1</sup>,
+          <a href="https://www.nae.edu/248787/Dr-Hongtei-Eric-Tseng" target="_blank">H. Eric Tseng</a><sup>2,✉️</sup>,
+          <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html" target="_blank">Ding Zhao</a><sup>1,✉️</sup>
+        </span>
+      </div>
+
+      <div class="is-size-6 mt-2">
+        <span>
+          <sup>1</sup><a href="https://safeai-lab.github.io/" target="_blank">Safe AI Lab, Carnegie Mellon University</a>,
+          <sup>2</sup><a href="https://etaic.github.io/" target="_blank">ETAIC Lab, University of Texas at Arlington</a>
+        </span>
+      </div>
+
+      <div class="is-size-6 mt-2">
+        <span>* Equal contribution &nbsp;&nbsp; ✉️ Corresponding authors</span>
+      </div>
+
+      <div class="column has-text-centered">
+        <div class="publication-links">
+          <span class="link-block">
+            <a href="https://arxiv.org/abs/2609.21100" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://arxiv.org/pdf/2609.21100" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="#demos" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fas fa-video"></i></span><span>Video</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://github.com/Chris-RuizeGeng" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Code (Coming Soon)</span>
+            </a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Teaser video (占位) =====
+     放视频：把下面整个 .video-placeholder 的 div 替换为
+     <video autoplay muted loop controls playsinline><source src="static/videos/teaser.mp4" type="video/mp4"></video>
+-->
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <div class="teaser-video-container">
+      <div class="video-placeholder"><i class="fas fa-circle-play"></i>Teaser video coming soon</div>
+      <p class="has-text-centered mt-3 is-size-6 has-text-grey">
+        Humanoid (Unitree G1) shooter vs. quadruped (Unitree Go2) goalkeeper under zero-sum self-play.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Learning in robotic games is constrained not only by strategic information but also by what the body can still execute.
+            We study this coupling in a hierarchical humanoid–quadruped penalty system in which game-level self-play policies command fixed soccer whole-body controllers (S-WBCs). The humanoid shooting skill is initialized from self-collected motion-capture data, whereas the quadruped saving skill is learned by reinforcement learning.
+            We introduce <strong>dynamics-induced commitment mapping (DIC-Map)</strong>, a body-grounded analysis that estimates continuation capability, identifies the first persistent loss of a terminal alternative, and tests whether the remaining interaction admits a reduced zero-sum game.
+            For symmetric terminal alternatives, the reduced game yields a closed-form bound on optimal strategy concentration determined by the responder's value of deferring.
+            We further show that, when the responder acts through an estimator, equal response values eliminate the direct terminal-allocation gradient and leave an estimator-mediated first-order learning channel.
+            Experiments locate commitment about 0.29 s before contact, and changing only ball speed shifts deferral coverage.
+            Across four responder policies, replacing the estimator raises save rate from 0.240 to 0.472, whereas a comparable gain in read accuracy obtained by waiting raises it only to 0.246.
+            Posterior analysis is used for the equilibrium comparison because the available coverage terms are observational proxies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="figure-block">
+      <img src="static/images/fig1_game.jpg" alt="Game-learning framework overview">
+      <div class="figure-description">
+        <strong>Figure 1: Overview of the proposed game-learning framework.</strong> Physical dynamics induce commitment, the responder's deferral option bounds equilibrium concentration, and estimator response values determine the active first-order learning channel during zero-sum self-play.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Three-Layer Architecture & DIC-Map</h2>
+    <div class="figure-block">
+      <img src="static/images/game_algorithm.jpg" alt="Three-layer architecture">
+      <div class="figure-description">
+        <strong>Figure 2: Three-layer architecture separating executable whole-body skills, strategic self-play, and DIC-Map.</strong> Fixed S-WBCs realize humanoid shooting and quadruped saving, game-level actor–critics revise strategic commands under zero-sum self-play, and DIC-Map maps the resulting physical rollouts to commitment timing, an equilibrium concentration constraint, and the active first-order learning channel.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hardware demos (占位) =====
+     每格放视频：把 .video-placeholder 的 div 替换为
+     <video autoplay muted loop playsinline><source src="static/videos/demo1.mp4" type="video/mp4"></video>
+-->
+<section class="section" id="demos">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Hardware Demonstrations</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 1: Anticipatory save — Go2 reads G1's shot side during kick preparation</div>
+      </div>
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 2: Late feint — G1 revises shot direction right before contact</div>
+      </div>
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 3: Save despite late target revision</div>
+      </div>
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 4: Deferral vs. early-read following</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Commitment Instrumentation</h2>
+    <div class="figure-block">
+      <img src="static/images/fig1_instantiation.jpg" alt="Penalty-game instrumentation">
+      <div class="figure-description">
+        <strong>Figure 3: Penalty-game instrumentation</strong> showing (a) the terminal aim regions, (b) continuation capability with 95% CIs, where η = 0.5 places the commitment time at 0.64 m or 0.29 s before contact, and (c) outcome readability under nominal and scripted revision.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Sim-to-Real Qualitative Results</h2>
+
+    <div class="figure-block">
+      <img src="static/images/game_results2.jpg" alt="Anticipatory goalkeeping on hardware">
+      <div class="figure-description">
+        <strong>Figure 4: Hardware deployment of anticipatory goalkeeping.</strong> Go2 predicts G1's final shot side during kick preparation, initiates an early interception motion, and blocks the ball.
+      </div>
+    </div>
+
+    <div class="figure-block">
+      <img src="static/images/game_results1.jpg" alt="Feint conceded">
+      <div class="figure-description">
+        <strong>Figure 5: Continuous strategic interaction with a late feint.</strong> G1 changes its shot direction immediately before ball contact, causing Go2 to move toward the wrong interception location and concede; the upper sequence shows simulation and the lower sequence the corresponding hardware trial.
+      </div>
+    </div>
+
+    <div class="figure-block">
+      <img src="static/images/game_results3.jpg" alt="Successful anticipatory save">
+      <div class="figure-description">
+        <strong>Figure 6: Successful anticipatory goalkeeping during continuous strategic interaction.</strong> Go2 predicts G1's final shot direction despite late target revision and saves the ball; the top row shows simulation, the middle row shows separately selected hardware key frames for each robot, and the bottom row shows the hardware overview.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Quantitative Analysis</h2>
+    <div class="figure-grid">
+
+      <div class="figure-block">
+        <img src="static/images/fig6_branch_replay.jpg" alt="Responder comparison">
+        <div class="figure-description">
+          <strong>Figure 7: Controlled responder comparison at β = 0.8.</strong> (a) Read accuracy versus save rate, where A→D and A→F yield similar accuracy gains but save-rate gains of +0.006 and +0.232; (b) cumulative save rate; (c) policy-F class-conditional Q<sub>yy</sub>, σ(y,y), and g<sub>y</sub>; (d) terminal responder position versus ball crossing.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/fig5_crossplay.jpg" alt="Cross-play outcomes">
+        <div class="figure-description">
+          <strong>Figure 8: Responder outcomes across evaluation settings.</strong> (a) Save, goal, and fall rates for policies A, D, E, and F; (b) a scripted-feint comparison in which deferral attains a save rate of 0.736 versus 0.502 for early-read following, with reactive-world bars reported using 95% CIs.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/fig2_purity_ceiling.jpg" alt="Posterior equilibrium analysis">
+        <div class="figure-description">
+          <strong>Figure 9: Posterior equilibrium analysis.</strong> (a) Coverage posteriors, (b) the posterior CDF of r, (c) the concentration-ceiling posterior against observed m, and (d) the posterior CDF of deviation gain. The broader downstream uncertainty reflects limited support for the mismatched-commitment cell.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/fig9_state_recording.jpg" alt="State recording">
+        <div class="figure-description">
+          <strong>Figure 10: Policy-F state recording.</strong> (a) Ball trajectories grouped by terminal event, (b) responder read-lock time against the initiator commitment time, where every sampled episode locks after the ball side is fixed, (c) goal rate, and (d) lateral prediction error.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/fig8_phase_diagram.jpg" alt="Phase diagram">
+        <div class="figure-description">
+          <strong>Figure 11: Physical timing across ball speed.</strong> (a) The responder spare-time margin and no-reaction margin, and (b) measured deferral coverage versus spare-time margin with 95% Jeffreys intervals and cell counts.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/fig4_league_training.jpg" alt="League training dynamics">
+        <div class="figure-description">
+          <strong>Figure 12: League training dynamics for the two analyzed runs.</strong> (a) Live save rate, (b) initiator switches per episode, (c) responder action standard deviation, and (d) save rate against the frozen archive, which increases from 0.51 to 0.68.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{geng2026dynamics,
+  title={Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks},
+  author={Geng, Ruize and Zhang, Hao E. and Li, Yisen and Wang, Yikai and Tseng, H. Eric and Zhao, Ding},
+  journal={arXiv preprint arXiv:2609.21100},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered is-size-7 has-text-grey">
+    <p>Project page for <em>Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks</em>. Back to <a href="https://chris-ruizegeng.github.io/">Ruize Geng's homepage</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

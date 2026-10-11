@@ -55,56 +55,76 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/selfplay.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><video src='images/selfplay.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks](https://arxiv.org/abs/2609.21100)
 
 **Ruize Geng**, Hao E. Zhang, Yisen Li, Yikai Wang, H. Eric Tseng, Ding Zhao
 
+*Submitted to IEEE Trans. (Full version) and ICRA (Conf version)*
+
+- We introduce dynamics-induced commitment mapping (DIC-Map), a body-grounded framework that identifies when physical dynamics eliminate strategic alternatives in robotic games, revealing how embodiment fundamentally shapes learning and decision making in humanoid-quadruped penalty kicks.
+
 [**arXiv**](https://arxiv.org/abs/2609.21100)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/sage.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><video src='images/sage.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration](https://arxiv.org/abs/2609.21130)
 
 Yisen Li\*, Hao Zhang\*, **Ruize Geng**\*, Yves Tseng, Ding Zhao, H. Eric Tseng (\* equal contribution)
 
+*Submitted to IEEE Trans. (Full version) and ICRA (Conf version)*
+
+- We propose safety-aligned gradient enforcement (SAGE), which aligns interpretable multi-agent policy learning with safety-constrained execution through differentiable safety internalization and Lyapunov-regulated team-aware policy updates, enabling safe physical collaboration between multiple humanoid robots and humans.
+
 [**arXiv**](https://arxiv.org/abs/2609.21130)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/goalkeeping.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><video src='images/goalkeeping.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Anticipatory Robot Goalkeeping via Monotone Optimal Stopping](https://arxiv.org/abs/2609.23976)
 
 Hao E. Zhang\*, **Ruize Geng**\*, Yisen Li, Yaru Niu, Yikai Wang, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao (\* equal contribution)
 
+*Submitted to IEEE Trans. (Full version) and ICRA (Conf version)*
+
+- We formulate anticipatory robotic interception as a finite-horizon optimal stopping problem and propose monotone optimal stopping (MOS), allowing a quadruped goalkeeper to decide when to act before shot intent is fully resolved while retaining closed-loop adaptation to deceptive direction changes.
+
 [**arXiv**](https://arxiv.org/abs/2609.23976)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/banana_kick.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><video src='images/banana_kick.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer](https://arxiv.org/abs/2609.27269)
 
 Hao E. Zhang\*, **Ruize Geng**\*, Raihan Haque, Khalil Zbiss, Guanyang Luo, Hui-ping Wang, H. Eric Tseng, Ding Zhao (\* equal contribution)
 
+*Submitted to IEEE Trans. (Full version) and ICRA (Conf version)*
+
+- We propose response-informed skill evolution (RISE), a closed-loop objective-continuation method for policy adaptation. RISE evolves the ordinary kick into a high-spin curved kick with 11.55 rad/s mean ball spin.
+
 [**arXiv**](https://arxiv.org/abs/2609.27269)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted to ICRA 2027</div><video src='images/cognition_control.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><video src='images/cognition_control.mp4' width="100%" autoplay loop muted playsinline></video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Cognition to Control: Multi-Agent Learning for Human-Humanoid Collaborative Transport](https://arxiv.org/abs/2603.03768)
 
 Hao Zhang, Yisen Li, **Ruize Geng**, Yves Tseng, Yaru Niu, Ding Zhao, H. Eric Tseng
+
+*Submitted to IEEE Trans. (Full version) and ICRA (Conf version)*
+
+- In multi-agent human-robot collaboration, long-horizon coordination decisions and physical execution must co-evolve under contact, feasibility, and safety constraints. We address this limitation with cognition-to-control (C2C), a three-layer hierarchy that makes the deliberation-to-control pathway explicit.
 
 [**arXiv**](https://arxiv.org/abs/2603.03768)
 </div>

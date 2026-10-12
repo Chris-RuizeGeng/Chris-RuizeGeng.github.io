@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAGE: Safety-Aligned Gradient Enforcement for Human–Robot Collaboration</title>
+  <meta name="description" content="SAGE aligns interpretable multi-agent policy learning with safety-constrained execution via SAIL and TALO, enabling safe physical collaboration between humanoid robots and humans.">
+
+  <link rel="icon" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #363636; }
+  .publication-title { font-weight: 800; margin-bottom: 0.5rem !important; }
+  .section { padding: 1.5rem 1.5rem !important; }
+
+  .teaser-video-container { max-width: 1000px; margin: 0 auto 1rem auto; }
+  .teaser-video-container video { width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+  /* 视频占位框：放好视频后把 .video-placeholder 的 div 换成
+     <video autoplay muted loop playsinline><source src="static/videos/demoN.mp4" type="video/mp4"></video> */
+  .video-placeholder {
+    width: 100%; aspect-ratio: 16 / 9;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    border: 2px dashed #c9c9c9; border-radius: 12px; background: #fafafa; color: #9a9a9a;
+    font-weight: 600; letter-spacing: 0.02em;
+  }
+  .video-placeholder i { font-size: 2.2rem; margin-bottom: 0.4rem; }
+
+  .video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 1rem; }
+  @media (max-width: 768px) { .video-grid { grid-template-columns: 1fr; } }
+  .video-item { background: #fdfdfd; padding: 10px; border-radius: 10px; text-align: center; }
+  .video-item video { width: 100%; border-radius: 6px; }
+  .video-item .video-placeholder { border-radius: 6px; }
+  .video-caption { margin-top: 5px; font-weight: 600; font-size: 0.85rem; }
+
+  .figure-block { margin-bottom: 1.5rem !important; text-align: center; }
+  .figure-block img { width: 100%; max-width: 900px; height: auto; margin-bottom: 10px; }
+  .figure-description { text-align: justify; font-size: 1rem; line-height: 1.5; max-width: 900px; margin: 0 auto; }
+
+  .figure-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; max-width: 1000px; margin: 0 auto; }
+  @media (max-width: 768px) { .figure-grid { grid-template-columns: 1fr; } }
+  .figure-grid .figure-block img { max-width: 100%; }
+  .figure-grid .figure-description { font-size: 0.92rem; }
+
+  .figure-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 900px; margin: 0 auto 10px auto; }
+  @media (max-width: 768px) { .figure-pair { grid-template-columns: 1fr; } }
+  .figure-pair img { width: 100%; height: auto; }
+
+  .section-title { font-weight: 700; margin-bottom: 1rem !important; }
+  .hero.is-light { background-color: transparent !important; }
+
+  .publication-authors a, .is-size-6.mt-2 a { color: #363636 !important; text-decoration: none; }
+  .publication-authors a:hover, .is-size-6.mt-2 a:hover { color: #3273dc !important; text-decoration: underline; }
+  .is-size-6.mt-2 { color: #363636 !important; }
+
+  .publication-links { margin-top: 1rem; margin-bottom: 1rem; }
+  .external-link { border-radius: 20px; margin: 0 5px; }
+  pre { padding: 1rem !important; margin-top: 0.5rem !important; }
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+
+      <h1 class="title is-1 publication-title">
+        🛡️ SAGE: Safety-Aligned Gradient Enforcement<br>for Human–Robot Collaboration
+      </h1>
+
+      <p class="is-size-5 has-text-weight-semibold has-text-grey mb-3">
+        Submitted to IEEE Trans. (Full version) and ICRA (Conf version)
+      </p>
+
+      <div class="is-size-5 publication-authors">
+        <span class="author-block">
+          <a href="#">Yisen Li</a><sup>*,1</sup>,
+          <a href="https://haozhang-thu.github.io/" target="_blank">Hao Zhang</a><sup>*,1,2,■</sup>,
+          <a href="https://chris-ruizegeng.github.io/" target="_blank">Ruize Geng</a><sup>2</sup>,
+          <a href="#">Yves Tseng</a><sup>1</sup>,
+          <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html" target="_blank">Ding Zhao</a><sup>2,■</sup>,
+          <a href="https://www.nae.edu/248787/Dr-Hongtei-Eric-Tseng" target="_blank">H. Eric Tseng</a><sup>1,■</sup>
+        </span>
+      </div>
+
+      <div class="is-size-6 mt-2">
+        <span>
+          <sup>1</sup><a href="https://etaic.github.io/" target="_blank">ETAIC Lab, University of Texas at Arlington</a>,
+          <sup>2</sup><a href="https://safeai-lab.github.io/" target="_blank">Safe AI Lab, Carnegie Mellon University</a>
+        </span>
+      </div>
+
+      <div class="is-size-6 mt-2">
+        <span>* Equal contribution &nbsp;&nbsp; ■ Corresponding authors</span>
+      </div>
+
+      <div class="column has-text-centered">
+        <div class="publication-links">
+          <span class="link-block">
+            <a href="https://arxiv.org/abs/2609.21130" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://arxiv.org/pdf/2609.21130" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://github.com/Chris-RuizeGeng" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Code (Coming Soon)</span>
+            </a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <div class="teaser-video-container">
+      <video autoplay muted loop controls playsinline><source src="static/videos/teaser.mp4" type="video/mp4"></video>
+      <p class="has-text-centered mt-3 is-size-6 has-text-grey">
+        Multi-robot cooperative transport with auditable hard-tree policies and exact CBF-QP safety filtering.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multi-party human–robot collaboration poses a dual challenge: robot decisions should remain interpretable and auditable, while executed actions must satisfy safety constraints during physical interaction. Combining explainable decision-tree policies with control-barrier-function (CBF) filtering provides a promising architecture but creates two learning mismatches in multi-agent reinforcement learning. Safety projection changes the action applied to the environment, while the coupled proposal graph can misalign independently optimized actor updates with a team-level update.
+            We present <strong>safety-aligned gradient enforcement (SAGE)</strong> to address both mismatches. Its <strong>shield-annealed internalization layer (SAIL)</strong> uses a differentiable finite-penalty proposal map while retaining the exact CBF quadratic program for execution, preserving constraint-normal sensitivity to internalize repeatedly active safety constraints. <strong>Team-averaged Lyapunov policy optimization (TALO)</strong> constructs a team-aware update reference and applies a Lyapunov half-space correction to regulate independent actor updates.
+            Physical experiments with two humanoid robots and a human partner demonstrate deployment feasibility. Across nine simulation scenarios, SAGE achieves a 71.0% success rate with 0.5 collision steps per thousand environment steps. Ablations show that direct CBF filtering reduces collision frequency by 98.5% but decreases success from 67.3% to 59.3%. SAIL reduces proposal violation by 48.8% and proposal–execution correction by 85.2%, while TALO reduces the update-consistency gap by 50.8%.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="figure-block">
+      <img src="static/images/FIG1_SAGE.jpg" alt="SAGE architecture">
+      <div class="figure-description">
+        <strong>Figure 1: Architecture of SAGE</strong> integrating auditable hard-tree nominal policies, SAIL-based proposal learning, exact joint CBF-QP execution, and TALO-based multi-actor policy optimization.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">SAGE Training & Deployment Framework</h2>
+    <div class="figure-block">
+      <img src="static/images/algorithm_main_compressed.jpg" alt="SAGE training and deployment structure">
+      <div class="figure-description">
+        <strong>Figure 2: Training and deployment structure of SAGE.</strong> Hard-tree actors generate auditable nominal actions, SAIL forms differentiable proposal centers for safety-aware proposal learning, the exact joint CBF-QP maps sampled proposals to constraint-satisfying executed actions, and TALO uses executed-transition returns and a team-aware update reference to regulate independent actor updates. SAIL, exploration, the critic, and TALO are removed at deployment, leaving only the learned hard-tree actors and the exact joint CBF-QP.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="demos">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Real-World Human–Humanoid Transport</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 1: Outbound formation — human on the long edge, G1s at the short ends</div>
+      </div>
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 2: Return formation — human at one short end, G1s at the opposite end and long edge</div>
+      </div>
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 3: Octagonal-table transport</div>
+      </div>
+      <div class="video-item">
+        <div class="video-placeholder"><i class="fas fa-circle-play"></i>Video coming soon</div>
+        <div class="video-caption">Scenario 4: Path-constrained cooperative carry</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="figure-block">
+      <div class="figure-pair">
+        <img src="static/images/zhengmian-go.jpg" alt="Outbound formation">
+        <img src="static/images/cemian-come-icra.jpg" alt="Return formation">
+      </div>
+      <div class="figure-description">
+        <strong>Figure 3: Human–humanoid transport with two Unitree G1s and a human partner</strong> in outbound (human on the long edge, G1s at the short ends) and return (human at one short end, G1s at the opposite short end and long edge) formations, showing (a) multi-exposure trial views, (b) top-view and (c) 3-D Vicon trajectories over four trials (Exp. A–D), and (d) board-corner velocity components versus normalized carry progress.
+      </div>
+    </div>
+
+    <div class="figure-block">
+      <img src="static/images/real-five.jpg" alt="Five real-world trials">
+      <div class="figure-description">
+        <strong>Figure 4: Representative snapshots from five real-world human–robot cooperative-transport trials</strong> showing temporal progression across five task configurations, including transport of an octagonal table.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Simulation Benchmark</h2>
+    <div class="figure-block">
+      <img src="static/images/sum1_single_column.jpg" alt="Nine cooperative-transport scenarios">
+      <div class="figure-description">
+        <strong>Figure 5: Nine multi-carrier cooperative-transport scenarios</strong> grouped by row into LCP (Narrow Gate, Needle Gate, Tilt Gate), STR (Double Gate, Chicane, S-Shaped Corridor), and CCN (L-Corridor, U-Shaped Corridor, Maze), with overlaid payload poses indicating representative trajectory configurations.
+      </div>
+    </div>
+    <div class="figure-block">
+      <img src="static/images/simulation.jpg" alt="Simulation scenarios">
+      <div class="figure-description">
+        <strong>Figure 6: Illustrative multi-robot cooperative-transport scenarios</strong> across indoor environments and payload geometries.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 section-title has-text-centered">Quantitative Analysis & Ablations</h2>
+    <div class="figure-grid">
+
+      <div class="figure-block">
+        <img src="static/images/fig_main_sr_col_bars.jpg" alt="Suite-level performance">
+        <div class="figure-description">
+          <strong>Figure 7: Suite-level performance across LCP, STR, and CCN</strong>, with success rate (↑) above and collision steps per thousand environment steps (↓) below; the broken lower axis accommodates the much larger collision rate of unshielded HAPPO, and error bars denote standard deviation across evaluation runs.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/reward_drop.jpg" alt="Training dynamics">
+        <div class="figure-description">
+          <strong>Figure 8: Training dynamics of the five methods</strong> showing (a) cumulative reward and (b) payload drop rate, with solid curves denoting the mean and shaded regions the variability across runs.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/sail_talo_stack.jpg" alt="SAIL and TALO mechanism dynamics">
+        <div class="figure-description">
+          <strong>Figure 9: SAIL and TALO mechanism dynamics</strong> showing (a) proposal violation rate of the raw hard-tree nominal action, (b) proposal–execution correction, (c) update-consistency gap, and (d) cosine alignment between the independent and team-aware gradients.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/scaled_payload_panels.jpg" alt="Execution-level comparison">
+        <div class="figure-description">
+          <strong>Figure 10: Execution-level comparison across the five methods</strong> in (a) payload-tilt-induced vertical deviation, (b) mean step-wise heading error, (c) payload height error, and (d) task completion time, with error bars indicating variability across runs.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/isaac_maze_row_open.jpg" alt="Joint-leaf-tuple audit">
+        <div class="figure-description">
+          <strong>Figure 11: Joint-leaf-tuple audit in the Isaac Lab Maze</strong> showing (a) occupancy over path progress across 30 evaluation episodes and (b) the highlighted episode colored by the 12 most frequent tuples, with remaining tuples grouped as other; the black square and red star mark the start and goal.
+        </div>
+      </div>
+
+      <div class="figure-block">
+        <img src="static/images/risk_maze_3pa_wide_s1_robot_tree_flat.jpg" alt="Hard-tree decision traces">
+        <div class="figure-description">
+          <strong>Figure 12: Representative decision traces through a deployed hard-tree policy</strong> in the Isaac Lab Maze, with green and purple branches marking two complete root-to-leaf predicate sequences and their affine leaf commands; unselected sibling branches are collapsed for readability.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{li2026sage,
+  title={SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration},
+  author={Li, Yisen and Zhang, Hao and Geng, Ruize and Tseng, Yves and Zhao, Ding and Tseng, H. Eric},
+  journal={arXiv preprint arXiv:2609.21130},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered is-size-7 has-text-grey">
+    <p>Project page for <em>SAGE: Safety-Aligned Gradient Enforcement for Human–Robot Collaboration</em>. Back to <a href="https://chris-ruizegeng.github.io/">Ruize Geng's homepage</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

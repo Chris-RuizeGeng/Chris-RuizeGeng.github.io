@@ -81,7 +81,7 @@ Yisen Li\*, Hao Zhang\*, **Ruize Geng**\*, Yves Tseng, Ding Zhao, H. Eric Tseng 
 
 - We propose safety-aligned gradient enforcement (SAGE), which aligns interpretable multi-agent policy learning with safety-constrained execution through differentiable safety internalization and Lyapunov-regulated team-aware policy updates, enabling safe physical collaboration between multiple humanoid robots and humans.
 
-[**arXiv**](https://arxiv.org/abs/2609.21130)
+[**arXiv**](https://arxiv.org/abs/2609.21130) | [**Project Webpage**](https://chris-ruizegeng.github.io/sage/)
 </div>
 </div>
 

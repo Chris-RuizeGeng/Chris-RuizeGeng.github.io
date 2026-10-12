@@ -75,7 +75,7 @@ My research focuses on whole-body control of humanoid robots, multi-agent cooper
 
 [SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration](https://arxiv.org/abs/2609.21130)
 
-Yisen Li\*, Hao Zhang\*, **Ruize Geng**\*, Yves Tseng, Ding Zhao, H. Eric Tseng (\* equal contribution)
+Yisen Li\*, Hao Zhang\*, **Ruize Geng**, Yves Tseng, Ding Zhao, H. Eric Tseng (\* equal contribution)
 
 *Submitted to IEEE Trans. (Full version) and ICRA (Conf version)*
 

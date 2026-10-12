@@ -154,7 +154,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="figure-block">
-      <img src="static/images/FIG1_SAGE.jpg" alt="SAGE architecture">
+      <img src="static/images/FIG1_SAGE.png" alt="SAGE architecture">
       <div class="figure-description">
         <strong>Figure 1: Architecture of SAGE</strong> integrating auditable hard-tree nominal policies, SAIL-based proposal learning, exact joint CBF-QP execution, and TALO-based multi-actor policy optimization.
       </div>
@@ -166,7 +166,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 section-title has-text-centered">SAGE Training & Deployment Framework</h2>
     <div class="figure-block">
-      <img src="static/images/algorithm_main_compressed.jpg" alt="SAGE training and deployment structure">
+      <img src="static/images/algorithm_main_compressed.png" alt="SAGE training and deployment structure">
       <div class="figure-description">
         <strong>Figure 2: Training and deployment structure of SAGE.</strong> Hard-tree actors generate auditable nominal actions, SAIL forms differentiable proposal centers for safety-aware proposal learning, the exact joint CBF-QP maps sampled proposals to constraint-satisfying executed actions, and TALO uses executed-transition returns and a team-aware update reference to regulate independent actor updates. SAIL, exploration, the critic, and TALO are removed at deployment, leaving only the learned hard-tree actors and the exact joint CBF-QP.
       </div>
@@ -243,42 +243,42 @@
     <div class="figure-grid">
 
       <div class="figure-block">
-        <img src="static/images/fig_main_sr_col_bars.jpg" alt="Suite-level performance">
+        <img src="static/images/fig_main_sr_col_bars.png" alt="Suite-level performance">
         <div class="figure-description">
           <strong>Figure 7: Suite-level performance across LCP, STR, and CCN</strong>, with success rate (↑) above and collision steps per thousand environment steps (↓) below; the broken lower axis accommodates the much larger collision rate of unshielded HAPPO, and error bars denote standard deviation across evaluation runs.
         </div>
       </div>
 
       <div class="figure-block">
-        <img src="static/images/reward_drop.jpg" alt="Training dynamics">
+        <img src="static/images/reward_drop.png" alt="Training dynamics">
         <div class="figure-description">
           <strong>Figure 8: Training dynamics of the five methods</strong> showing (a) cumulative reward and (b) payload drop rate, with solid curves denoting the mean and shaded regions the variability across runs.
         </div>
       </div>
 
       <div class="figure-block">
-        <img src="static/images/sail_talo_stack.jpg" alt="SAIL and TALO mechanism dynamics">
+        <img src="static/images/sail_talo_stack.png" alt="SAIL and TALO mechanism dynamics">
         <div class="figure-description">
           <strong>Figure 9: SAIL and TALO mechanism dynamics</strong> showing (a) proposal violation rate of the raw hard-tree nominal action, (b) proposal–execution correction, (c) update-consistency gap, and (d) cosine alignment between the independent and team-aware gradients.
         </div>
       </div>
 
       <div class="figure-block">
-        <img src="static/images/scaled_payload_panels.jpg" alt="Execution-level comparison">
+        <img src="static/images/scaled_payload_panels.png" alt="Execution-level comparison">
         <div class="figure-description">
           <strong>Figure 10: Execution-level comparison across the five methods</strong> in (a) payload-tilt-induced vertical deviation, (b) mean step-wise heading error, (c) payload height error, and (d) task completion time, with error bars indicating variability across runs.
         </div>
       </div>
 
       <div class="figure-block">
-        <img src="static/images/isaac_maze_row_open.jpg" alt="Joint-leaf-tuple audit">
+        <img src="static/images/isaac_maze_row_open.png" alt="Joint-leaf-tuple audit">
         <div class="figure-description">
           <strong>Figure 11: Joint-leaf-tuple audit in the Isaac Lab Maze</strong> showing (a) occupancy over path progress across 30 evaluation episodes and (b) the highlighted episode colored by the 12 most frequent tuples, with remaining tuples grouped as other; the black square and red star mark the start and goal.
         </div>
       </div>
 
       <div class="figure-block">
-        <img src="static/images/risk_maze_3pa_wide_s1_robot_tree_flat.jpg" alt="Hard-tree decision traces">
+        <img src="static/images/risk_maze_3pa_wide_s1_robot_tree_flat.png" alt="Hard-tree decision traces">
         <div class="figure-description">
           <strong>Figure 12: Representative decision traces through a deployed hard-tree policy</strong> in the Isaac Lab Maze, with green and purple branches marking two complete root-to-leaf predicate sequences and their affine leaf commands; unselected sibling branches are collapsed for readability.
         </div>
